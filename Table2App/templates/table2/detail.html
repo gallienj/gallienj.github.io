@@ -1,0 +1,124 @@
+{% extends "data/header.html" %}
+{% block content %}
+
+<table class="table table-bordered">
+
+<tr>
+<th colspan="2">
+Architecture detail: {{ architectures.field1 }}
+</th>
+</tr>
+
+<col width = "25%">
+<col width = "75%">
+
+<tr>
+<td>GB ID</td>
+<td>{{ architectures.field1|safe|linebreaks}}
+</td>
+</tr>
+
+<tr>
+<td>Domain architecture</td>
+<td>{{ architectures.field2|safe|linebreaks}}
+</td>
+</tr>
+
+<tr>
+<td>Pfam annotation</td>
+<td>{{ architectures.field3|safe|linebreaks}}
+</td>
+</tr>
+
+<tr>
+<td>Local dataset</td>
+<td>{{ architectures.field4|safe|linebreaks}}
+</td>
+</tr>
+
+<tr>
+<td>Gene name</td>
+<td>{{ architectures.field5|safe|linebreaks}}
+</td>
+</tr>
+
+<tr>
+<td>Protein length</td>
+<td>{{ architectures.field6|safe|linebreaks}}
+</td>
+</tr>
+
+<tr>
+<td>Taxonomy</td>
+<td>{{ architectures.field7|safe|linebreaks}}
+</td>
+</tr>
+
+<tr>
+<td>Species</td>
+<td>{{ architectures.field8|safe|linebreaks}}
+</td>
+</tr>
+
+<tr>
+<td>NCBI annotation</td>
+<td>{{ architectures.field9|safe|linebreaks}}
+</td>
+</tr>
+
+</table>
+
+<!--
+
+<h5>Architecture detail: {{ architectures.field1 }}</h5>
+
+<li>Field 1:
+<div class = "container">
+	{{ architectures.field1|safe|linebreaks}}
+</div>
+
+<li>Field 2:
+<div class = "container">
+	{{ architectures.field2|safe|linebreaks}}
+</div>
+
+<li>Field 3:
+<div class = "container">
+	{{ architectures.field3|safe|linebreaks}}
+</div>
+
+<li>Field 4:
+<div class = "container">
+	{{ architectures.field4|safe|linebreaks}}
+</div>
+
+<li>Field 5:
+<div class = "container">
+	{{ architectures.field5|safe|linebreaks}}
+</div>
+
+<li>Field 6:
+<div class = "container">
+	{{ architectures.field6|safe|linebreaks}}
+</div>
+
+<li>Field 7:
+<div class = "container">
+	{{ architectures.field7|safe|linebreaks}}
+</div>
+
+<li>Field 8:
+<div class = "container">
+	{{ architectures.field8|safe|linebreaks}}
+</div>
+
+<li>Field 9:
+<div class = "container">
+	{{ architectures.field9|safe|linebreaks}}
+</div>
+
+
+<br><br>
+
+-->
+{% endblock %}

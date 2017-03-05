@@ -1,0 +1,31 @@
+{% extends "data/header.html" %}
+{% block content %}
+
+	<table class="table table-bordered">
+	
+	<tr>
+	<th>
+	FASTAs
+	</th>
+	</tr>
+
+	{% for fasta in object_list %}
+
+		<tr>
+		<td><a href="/table1/{{fasta.id}}">  {{ fasta.gi }}</a>
+		</td>
+		</tr>
+		
+	{% endfor %}
+
+	</table>
+
+<!--	
+
+	FASTA
+	{% for fasta in object_list %}
+		<li><h5><a href="/table1/{{fasta.id}}">  {{ fasta.gi }}</a></h5>
+	{% endfor %}
+
+-->
+{% endblock %}

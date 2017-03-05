@@ -1,0 +1,46 @@
+{% extends "data/header.html" %}
+{% block content %}
+
+<!-- <h5>FASTA detail: {{ fasta.gi }}</h5> -->
+
+<table class="table table-bordered">
+
+<tr>
+<th colspan="2">
+FASTA detail: {{ fasta.gi }}
+</th>
+</tr>
+
+<col width = "25%">
+<col width = "75%">
+
+<tr>
+<td>GI</td>
+<td>{{ fasta.gi|safe|linebreaks}}
+</td>
+</tr>
+
+<tr>
+<td>Sequence</td>
+<td>{{ fasta.sequence|safe|linebreaks}}</td>
+</tr>
+
+</table>
+
+<!--
+
+<li>GI:
+<div class = "container">
+	{{ fasta.gi|safe|linebreaks}}
+</div>
+
+
+<li>Sequence:
+<div class = "container">
+	{{ fasta.sequence|safe|linebreaks}}
+</div>
+<br><br>
+
+-->
+
+{% endblock %}

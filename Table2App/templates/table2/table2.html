@@ -1,0 +1,32 @@
+{% extends "data/header.html" %}
+{% block content %}
+
+
+	<table class="table table-bordered">
+	
+	<tr>
+	<th>
+	Architectures
+	</th>
+	</tr>
+
+	{% for architecture in object_list %}
+
+		<tr>
+		<td><a href="/table2/{{architecture.id}}">  {{ architecture.field1 }}</a>
+		</td>
+		</tr>
+		
+	{% endfor %}
+
+	</table>
+
+
+<!--
+	Architectures
+	{% for architecture in object_list %}
+		<li><h5><a href="/table2/{{architecture.id}}">  {{ architecture.field1 }}</a></h5>
+	{% endfor %}
+
+-->
+{% endblock %}

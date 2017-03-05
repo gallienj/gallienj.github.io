@@ -1,0 +1,25 @@
+{% extends "data/header.html" %}
+{% block content %}
+	<table class="table table-bordered">
+	
+	<tr>
+	<th>
+	Toxins
+	</th>
+	</tr>
+
+	{% for toxin in object_list %}
+
+		<tr>
+		<td><a href="/table3/{{toxin.id}}">  {{ toxin.field1 }}</a>
+		</td>
+		</tr>
+
+		<!-- <li><h5><a href="/table3/{{toxin.id}}">  {{ toxin.field1 }}</a></h5> -->
+	{% endfor %}
+
+	</table>
+
+
+
+{% endblock %}

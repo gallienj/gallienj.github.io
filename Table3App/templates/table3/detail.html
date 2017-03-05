@@ -1,0 +1,68 @@
+{% extends "data/header.html" %}
+{% block content %}
+
+<table class="table table-bordered">
+
+<tr>
+<th colspan="2">
+Toxin detail: {{ toxin.field1 }}
+</th>
+</tr>
+
+<col width = "25%">
+<col width = "75%">
+
+<tr>
+<td>GB ID</td>
+<td>{{ toxin.field1|safe|linebreaks}}
+</td>
+</tr>
+
+<tr>
+<td>Operon [with annotation]</td>
+<td>{{ toxin.field2|safe|linebreaks}}
+</td>
+</tr>
+
+<tr>
+<td>Species</td>
+<td>{{ toxin.field3|safe|linebreaks}}
+</td>
+</tr>
+
+<tr>
+<td>Operon [full]</td>
+<td>{{ toxin.field4|safe|linebreaks}}
+</td>
+</tr>
+
+</table>
+
+<!--
+
+<h5>Toxin detail: {{ toxin.field1 }}</h5>
+
+<li>Field 1:
+<div class = "container">
+	{{ toxin.field1|safe|linebreaks}}
+</div>
+
+<li>Field 2:
+<div class = "container">
+	{{ toxin.field2|safe|linebreaks}}
+</div>
+
+<li>Field 3:
+<div class = "container">
+	{{ toxin.field3|safe|linebreaks}}
+</div>
+
+<li>Field 4:
+<div class = "container">
+	{{ toxin.field4|safe|linebreaks}}
+</div>
+
+<br><br>
+
+-->
+{% endblock %}
